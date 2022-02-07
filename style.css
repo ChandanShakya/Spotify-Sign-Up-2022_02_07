@@ -1,15 +1,13 @@
 #center {
     background-color: white;
     width: 500px;
-    height: 720px;
 
     padding-left: 24px;
     padding-right: 24px;
 
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     font-family: arial;
 }
 #SignUp {
