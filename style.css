@@ -1,0 +1,98 @@
+#center {
+    background-color: white;
+    width: 500px;
+    height: 720px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+}
+#SignUp {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.TextBox {
+    width: 94%;
+    border: 0;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px black;
+}
+#DOB{
+    font-size: 14px;
+    font-weight: 700;
+    color: #747474;
+}
+.DOB{
+    display: flex;
+    justify-content : space-between;
+
+}
+#month{
+    width:45%;
+    background-color: white;
+    color: #747474;
+}
+#day{
+    width: 20%;
+}
+#year{
+    width: 20%;
+}
+#month,
+#day,
+#year{
+    border: 0;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px black;
+}
+.outText{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.buttonOut,
+.g-recaptcha{
+    display: flex;
+    justify-content: space-around;
+}
+#button {
+    border-radius: 50px;
+    background-color: #18ac4d;
+    color: #e8e6e3;
+    border: none;
+    padding: 16px 145px;
+    font-weight: 1000;
+    font-size: 16px;
+}
+#button:hover {
+    transform: scale(1.04);
+}
+input,select{  
+    cursor: pointer;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #18ac4d;
+}
+span{
+    color: #747474;
+}
+.TextBox,
+.DOB,
+.gender,
+.outText,
+#button,
+.marketing{
+    margin-bottom: 24px;
+}
