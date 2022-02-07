@@ -5,4 +5,4 @@ This project was done on replit and hosted there.
 
 ## Screenshot
 
-<img src="https://github.com/ZXY-CC-3ag13/Spotify-Sign-Up-2022_02_07/main/Images/Screenshot.png" alt="SpotifyDemo" width="500px"/>
+<img src="https://github.com/ZXY-CC-3ag13/Spotify-Sign-Up-2022_02_07/blob/main/Images/Screenshot.png" alt="SpotifyDemo" width="700" height="auto"/>
