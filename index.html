@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Screen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <form name="MainForm">
+        <div id="center">
+            <center><span>Sign up with your email</span></center>
+            <table>
+                <tr>
+                    <td><input type="text" name="email" id="email" placeholder="Email" class="TextBox"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="confirmEmail" id="confirmEmail" placeholder="Confirm Email" class="TextBox"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="password" id="password" placeholder="Password" class="TextBox"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="username" id="username" placeholder="What should we call you?" class="TextBox"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="month" class="month" title="Month">
+                            <option selected="" value="">Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <input type="text" name="day" id="day" placeholder="Day" size="5">
+                        <input type="text" name="year" id="year" placeholder="Year" size="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">
+                            <span>Male</span>
+                        </label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">
+                            <span>Female</span>
+                        </label>
+                        <input type="radio" name="gender" value="Non-Binary" id="Non-Binary">
+                        <label for="Non-Binary">
+                            <span>Non-Binary</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="marketing" id="marketing">
+                        <label for="marketing">
+                            <span>Share my registration data with Spotify's content providers for marketing purposes.</span>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" name="submit" value="Sign Up" id="button" onclick="return validate()"></td>
+
+                </tr>
+
+            </table>
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
