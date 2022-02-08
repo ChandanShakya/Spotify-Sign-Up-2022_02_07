@@ -9,8 +9,10 @@
 </head>
 
 <body>
+    <div id="">
 	<form name="MainForm" method="post">
-		<div id="center">
+		
+        <div id="center">
 			<h2 id="SignUp">Sign up with your email address</h2>
 			<input type="text" name="email" placeholder="Email" class="TextBox">
             <input type="text" name="confirmEmail" placeholder="Confirm Email" class="TextBox">
@@ -38,6 +40,7 @@
                     <input type="text" name="year" id="year" placeholder="Year">
                 </div>
             </div>
+            <div>
             <input type="radio" name="gender" value="male" id="male" class="gender">
             <label for="male">
                 <span>Male</span>
@@ -50,6 +53,7 @@
             <label for="Non-Binary">
                 <span>Non-Binary</span>
             </label>
+            </div>
             <div class="marketing">
                 <input type="checkbox" name="marketing" id="marketing">
                 <label for="marketing">
@@ -71,7 +75,8 @@
             </div>
         </div>
     </form>
-    <script type="text/javascript" src="script.js"></script>
+   
+    </div> <script type="text/javascript" src="script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
