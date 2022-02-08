@@ -2,81 +2,82 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign Up Screen</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Screen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div id="">
-	<form name="MainForm" method="post">
-		
-        <div id="center">
-			<h2 id="SignUp">Sign up with your email address</h2>
-			<input type="text" name="email" placeholder="Email" class="TextBox">
-            <input type="text" name="confirmEmail" placeholder="Confirm Email" class="TextBox">
-            <input type="text" name="password" placeholder="Password" class="TextBox">
-            <input type="text" name="username" placeholder="What should we call you?" class="TextBox">
-            <div>
-                <span id="DOB">Date of birth :</span>
-                <div class="DOB">
-                    <select name="month" title="Month" id="month">
-                        <option selected="" value="" disabled>Month</option>
-                        <option value="01">January</option>
-                        <option value="02">February</option>
-                        <option value="03">March</option>
-                        <option value="04">April</option>
-                        <option value="05">May</option>
-                        <option value="06">June</option>
-                        <option value="07">July</option>
-                        <option value="08">August</option>
-                        <option value="09">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                    <input type="text" name="day" id="day" placeholder="Day">
-                    <input type="text" name="year" id="year" placeholder="Year">
+    <div id="body">
+        <form name="MainForm" method="post">
+
+            <div id="center">
+                <h2 id="SignUp">Sign up with your email address</h2>
+                <input type="text" name="email" placeholder="Email" class="TextBox">
+                <input type="text" name="confirmEmail" placeholder="Confirm Email" class="TextBox">
+                <input type="text" name="password" placeholder="Password" class="TextBox">
+                <input type="text" name="username" placeholder="What should we call you?" class="TextBox">
+                <div>
+                    <span id="DOB">Date of birth :</span>
+                    <div class="DOB">
+                        <select name="month" title="Month" id="month">
+                            <option selected="" value="" disabled>Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <input type="text" name="day" id="day" placeholder="Day">
+                        <input type="text" name="year" id="year" placeholder="Year">
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="male" id="male" class="gender">
+                    <label for="male">
+                        <span>Male</span>
+                    </label>
+                    <input type="radio" name="gender" value="female" id="female" class="gender">
+                    <label for="female">
+                        <span>Female</span>
+                    </label>
+                    <input type="radio" name="gender" value="Non-Binary" id="Non-Binary" class="gender">
+                    <label for="Non-Binary">
+                        <span>Non-Binary</span>
+                    </label>
+                </div>
+                <div class="marketing">
+                    <input type="checkbox" name="marketing" id="marketing">
+                    <label for="marketing">
+                        <span class="outText">Share my registration data with Spotify's content providers for marketing
+                            purposes.</span>
+                    </label>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LePaGMeAAAAAKOE-TvXI0L78Is8IODmWvtA98cw"></div><br>
+                <div class="outText">
+                    By clicking on Sign up, you agree to Spotify's <a
+                        href="https://www.spotify.com/us/legal/end-user-agreement/">Terms and Condition of Use.</a>
+                </div>
+                <div class="outText">
+                    To learn more about how Spotify collects, uses, shares and protects your personal data, please read
+                    Spotify's <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy.</a>
+                </div>
+                <div class="buttonOut">
+                    <input type="submit" name="submit" value="Sign Up" id="button" onclick="return validate()">
                 </div>
             </div>
-            <div>
-            <input type="radio" name="gender" value="male" id="male" class="gender">
-            <label for="male">
-                <span>Male</span>
-            </label>
-            <input type="radio" name="gender" value="female" id="female" class="gender">
-            <label for="female">
-                <span>Female</span>
-            </label>
-            <input type="radio" name="gender" value="Non-Binary" id="Non-Binary" class="gender">
-            <label for="Non-Binary">
-                <span>Non-Binary</span>
-            </label>
-            </div>
-            <div class="marketing">
-                <input type="checkbox" name="marketing" id="marketing">
-                <label for="marketing">
-                    <span class="outText">Share my registration data with Spotify's content providers for marketing
-                        purposes.</span>
-                </label>
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LePaGMeAAAAAKOE-TvXI0L78Is8IODmWvtA98cw"></div><br>
-            <div class="outText">
-                By clicking on Sign up, you agree to Spotify's <a
-                    href="https://www.spotify.com/us/legal/end-user-agreement/">Terms and Condition of Use.</a>
-            </div>
-            <div class="outText">
-                To learn more about how Spotify collects, uses, shares and protects your personal data, please read
-                Spotify's <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy.</a>
-            </div>
-            <div class="buttonOut">
-                <input type="submit" name="submit" value="Sign Up" id="button" onclick="return validate()">
-            </div>
-        </div>
-    </form>
-   
-    </div> <script type="text/javascript" src="script.js"></script>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 

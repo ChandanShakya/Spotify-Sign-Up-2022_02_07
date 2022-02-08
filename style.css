@@ -1,3 +1,7 @@
+body{
+    display:flex;
+    justify-content: center;
+}
 #body{
     width: 524px;
     display: flex;
@@ -36,18 +40,20 @@
 .DOB{
     display: flex;
     justify-content : space-between;
-
 }
 #month{
     width:45%;
     background-color: white;
     color: #747474;
+    margin : 10px 10px 0px 0px;
 }
 #day{
     width: 20%;
+    margin : 10px 10px 0px 0px;
 }
 #year{
     width: 20%;
+    margin : 10px 0px 0px 0px;
 }
 #month,
 #day,
@@ -98,4 +104,13 @@ span{
 #button,
 .marketing{
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 524px) {
+  #body {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #center {
+  width :90%;
+  }
 }
