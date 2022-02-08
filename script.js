@@ -1,4 +1,10 @@
+var recaptcha_response = '';
 function validate() {
+    if(recaptcha_response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;"> X Confirm you are not a robot.</span>';
+        return false;
+    }
+    
     var email = document.forms["MainForm"]["email"].value;
     var confirmEmail = document.forms["MainForm"]["confirmEmail"].value;
     var password = document.forms["MainForm"]["password"].value;
@@ -33,10 +39,7 @@ function validate() {
         alert("Year must be selected");
         return false;
     }
-    if(recaptcha_response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-        return false;
-    }
+    
 
 }
 function verifyCaptcha(token) {

@@ -69,11 +69,14 @@ body{
     font-weight: 400;
     text-align: center;
 }
-.g-recaptcha{
-    margin-bottom: 24px;
+.g-recaptcha,
+#g-recaptcha-error{
+    margin-bottom: 12px;
 }
 .buttonOut,
-.g-recaptcha{
+.g-recaptcha,
+#g-recaptcha-error
+{
     display: flex;
     justify-content: space-around;
 }
