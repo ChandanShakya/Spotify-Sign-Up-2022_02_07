@@ -108,7 +108,8 @@ span{
 .gender,
 .outText,
 #button,
-.marketing{
+.marketing,
+.error{
     margin-bottom: 24px;
 }
 
