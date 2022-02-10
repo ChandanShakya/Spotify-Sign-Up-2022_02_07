@@ -14,9 +14,9 @@
 
 			<div id="center">
 				<h2 id="SignUp">Sign up with your email address</h2>
-				<input type="email" name="email" placeholder="Email" class="TextBox">
+				<input type="text" name="email" placeholder="Email" class="TextBox">
                 <div id="email-error" class="error"></div>
-                <input type="email" name="confirmEmail" placeholder="Confirm Email" class="TextBox">
+                <input type="text" name="confirmEmail" placeholder="Confirm Email" class="TextBox">
                 <div id="confirm-email-error" class="error"></div>
                 <input type="password" name="password" placeholder="Password" class="TextBox">
                 <div id="password-error" class="error"></div>
@@ -43,8 +43,9 @@
                         <input type="text" name="day" id="day" placeholder="Day">
                         <input type="text" name="year" id="year" placeholder="Year">
                     </div>
-                    <div id="DOB-error" class="error"></div>
+                    
                 </div>
+                <div id="DOB-error" class="error"></div>
                 
                 <div>
                     <input type="radio" name="gender" value="male" id="male" class="gender">
@@ -71,7 +72,7 @@
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6LePaGMeAAAAAKOE-TvXI0L78Is8IODmWvtA98cw" data-callback="verifyCaptcha"></div>
-                <div id="g-recaptcha-error"></div>
+                <div id="g-recaptcha-error" class="error"></div>
                 <div class="outText">
                     By clicking on Sign up, you agree to Spotify's <a
                         href="https://www.spotify.com/us/legal/end-user-agreement/">Terms and Condition of Use.</a>
