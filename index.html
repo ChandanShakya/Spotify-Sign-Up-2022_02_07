@@ -40,12 +40,14 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <input type="text" name="day" id="day" placeholder="Day">
-                        <input type="text" name="year" id="year" placeholder="Year">
+                        <input type="tel" name="day" id="day" placeholder="Day">
+                        <input type="tel" name="year" id="year" placeholder="Year">
                     </div>
                     
                 </div>
-                <div id="DOB-error" class="error"></div>
+                <div id="Month-error" class="error"></div>
+                <div id="Day-error" class="error"></div>
+                <div id="Year-error" class="error"></div>
                 
                 <div>
                     <input type="radio" name="gender" value="male" id="male" class="gender">
@@ -68,7 +70,6 @@
                         <span class="outText">Share my registration data with Spotify's content providers for marketing
                             purposes.</span>
                     </label>
-                    <div id="marketing-error" class="error"></div>
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6LePaGMeAAAAAKOE-TvXI0L78Is8IODmWvtA98cw" data-callback="verifyCaptcha"></div>

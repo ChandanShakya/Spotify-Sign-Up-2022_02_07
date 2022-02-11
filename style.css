@@ -69,8 +69,7 @@ body{
     font-weight: 400;
     text-align: center;
 }
-.g-recaptcha,
-#g-recaptcha-error{
+.g-recaptcha{
     margin-bottom: 12px;
 }
 .buttonOut,

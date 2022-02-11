@@ -1,12 +1,14 @@
 var recaptcha_response = '';
+var form = document.forms["MainForm"].elements;
 const errorName = [
     'email-error',
     'confirm-email-error',
     'password-error',
     'username-error',
-    'DOB-error',
+    'Month-error',
+    'Day-error',
+    'Year-error',
     'gender-error',
-    'marketing-error',
     'g-recaptcha-error'
 ];
 for (var i = 0; i < errorName.length; i++) {
@@ -21,57 +23,59 @@ const inputName = [
     'month',
     'day',
     'year',
-    'gender',
-    'marketing'
+    'gender'
 ];
-const errorPromptname = [
+const errorPromptName = [
     'Email',
     'Confirm Email',
     'Password',
     'Username',
-    'DOB',
+    'Year',
+    'Month',
+    'Day',
     'Gender'
 ];
 
 function validate() {
-
-    var form = document.forms["MainForm"].elements;
-    //var email = form.email.value;
-    var simpleEmailRegex = /\S+@\S+\.\S+/;
-
-
-    for (var i = 0; i < inputName.length; i++) {
-        console.log(inputName[i]);
-        if(eval('form.' + inputName[i] + '.value == ""')) {
-            renderError(errorName[i]);
-            document.getElementById(errorName[i]).innerHTML = '<span style="color:red;"> X '+ errorPromptname[i] +' cannot be empty.</span>';
-            return false;
-        }else{
+    for (var i = 0; i < errorPromptName.length; i++) {
+        if (i < 7) {
+            if (eval('form.' + inputName[i] + '.value == ""')) {
+                renderError(errorName[i]);
+                document.getElementById(errorName[i]).innerHTML = '<span style="color:red;"> X ' + errorPromptName[i] + ' cannot be empty.</span>';
+            } else if(i==0){
+                if(!validateEmail(form.inputName[i].value)){
+                    renderError(errorName[i]);
+                    document.getElementById(errorName[i]).innerHTML = '<span style="color:red;"> X ' + errorPromptName[i] + ' is not valid.</span>';
+                }
+                
+            }else {
+                hideError(errorName[i]);
+                document.getElementById(errorName[i]).innerHTML = '';
+            }
+        } else if (i == 5) {
 
         }
     }
     if (recaptcha_response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;"> X Confirm you are not a robot.</span>';
+        renderError(errorName[8]);
+        document.getElementById(errorName[8]).innerHTML = '<span style="color:red;"> X Confirm you are not a robot.</span>';
         return false;
     }
 }
-
 function verifyCaptcha(token) {
     recaptcha_response = token;
     document.getElementById('g-recaptcha-error').innerHTML = '';
-}
-
-function noError() {
-    document.forms["MainForm"].elements.email.focus();
 }
 
 function renderError(errorName) {
     var error = document.getElementById(errorName);
     error.classList.add("error");
 }
-function hideError(){
-    
+function hideError(errorName) {
+    var error = document.getElementById(errorName);
+    error.classList.remove("error");
 }
+
 function validateEmail(email) {
     var simpleEmailRegex = /\S+@\S+\.\S+/;
     if (!simpleEmailRegex.test(email)) {
