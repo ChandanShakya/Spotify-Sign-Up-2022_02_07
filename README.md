@@ -1,7 +1,8 @@
 # Lab work for Spotify SignUp page
 
 This project was done on replit and hosted there.
-[Demo on Replit](https://spotify-sign-up-20220207.zxy-cc-3ag13.repl.co/)
+
+[![Try with Replit Badge](https://replit.com/badge?caption=Try%20with%20Replit)](https://replit.com/@ZXY-CC-3ag13/Spotify-Sign-Up-20220207?v=1)
 
 ## Screenshot
 
